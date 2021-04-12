@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfund [Front End Mentor Challenge]</title>
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <img src="/img/logo-mastercraft.svg" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li>About</li>
+                    <li>Discover</li>
+                    <li>Get Started</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="project-container">
+                <!-- Project Name and easy access CTA -->
+                <div id="project-header">
+                    <h2 class="project-name">Mastercraft Bamboo Monitor Riser</h2>
+                    <p class="project-subtitle">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+                    <div class="project-header_buttons">
+                        <button class="btn green">Back this project</button>
+                        <button class="bookmark-btn"><span class='desktop-bookmark-btn'>Bookmark</span></button>
+                    </div>
+                </div>
+                <!-- Project stats -->
+                <div id="project-stats">
+                    <div class="stat-item">
+                        <p class="stat-number">$89,914</p>
+                        <p class="stat-text">of $100,000 backed</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">5,007</p>
+                        <p class="stat-text">total backers</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">56</p>
+                        <p class="stat-text">days left</p>
+                    </div>
+                    <progress class='stat-progress' max="100" value="20"></progress>
+                </div>
+                <!-- About section -->
+                <div id="project-about">
+                    <h3>About this project</h3>
+                    <p class='project-about-description'>
+                        The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
+                        that elevates your screen to a more comfortable viewing height. Placing
+                        your monitor at eye level has the potential to improve your posture and
+                        make you more comfortable while at work, helping you stay focused
+                        on the task at hand.<br>
+                        <br>
+                        Featuring artisan craftmanship, the simplicity of design creates extra desk space
+                        below computer to allow notepads, pens, and USB sticks to be stored under the stand.
+                    </p>
+                    <!-- Pledge options divs -->
+                    <div class="pledge-option">
+                        <h4>Bamboo Stand</h4>
+                        <div class="pledge-amount">Pledge $25 or more</div>
+                        <p class='pledge-text'>
+                            You get an ergonomic stand made of natural bamboo.
+                            You've helped us launch our promotional campaign, and you'll be added to
+                            a special Backer member list.
+                        </p>
+                        <div class="pledge-numbers-left">101<span class="pledge-left-text">left</span>
+                        </div>
+                        <button class="button green">Select Reward</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="popup-container"></div>
+</body>
+</html>
