@@ -1,16 +1,114 @@
-/* Variables */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import '/styles/variables.css';
 
-:root {
-    --green: hsl(176, 50%, 47%);
-    --darkgreen: hsl(176, 72%, 28%);
-    --darkgrey: hsl(0, 0%, 48%);
-}
+
 
 body {
     font-size: 16px;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Commissioner', sans-serif;
+    background-color: var(--verypalegrey);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+p {
+    color: var(--darkgrey);
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* General boxes styles */
+
+.box {
+    border: solid 1px var(--lightgrey);
+    border-radius: 10px;
+    padding: 5% 5%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.pledge-option:hover {
+    border: solid 1px var(--green);
+}
+
+/* HEADER */
+
+header {
+    background: url(/img/image-hero-desktop.jpg) no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top:30px;
+    left: 10%;
+}
+
+header > nav {
+    position: absolute;
+    top:30px;
+    right:10%;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* PAGE CONTAINER */
+
+main {
+    width: var(--mainwidth);
+    min-width: 360px;
+    margin: auto;
+}
+
+#project-container {
+    opacity: 1;
+    animation: opacity 1s;
+    position: absolute;
+    top: 320px;
+    width: var(--mainwidth);
+    min-width: 360px;
+    max-width: 864px;
+}
+
+#project-header {
+    position: relative;
+    text-align: center;
+}
+
+.logo-mastercraft {
+    position: absolute;
+    top:-30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project-header_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5vh;
 }

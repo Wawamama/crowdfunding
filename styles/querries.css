@@ -1,0 +1,28 @@
+@media (max-width:681px) { /* change to 375px */
+    header {
+        background-image: url('/img/image-hero-mobile.jpg');
+    }
+
+    .bookmark-btn-mobile {
+        display: block;
+    }
+
+    .bookmark-btn-desktop::before, .bookmark-btn-desktop {
+        display: none;
+    }
+
+    .project-header_buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:681px) { /* change to 375px */
+    .bookmark-btn-mobile {
+        display: none;
+    }
+    .project-header_buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}

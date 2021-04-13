@@ -1,0 +1,56 @@
+@import '/styles/variables.css';
+
+.button {
+    outline: none;
+    color: white;
+    padding: 12px;
+    border-style: none;
+    position: relative;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+    width: 190px;
+    font-weight: 700;
+}
+
+
+.bookmark-btn-desktop {
+    background-color: var(--lightgrey);
+    width: 165px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    color: var(--darkgrey);
+    font-weight: 700;
+    padding: 12px 12px 12px 48px;
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.bookmark-btn-desktop::before {
+    content: '';
+    background-color: black;
+    background: url('../img/icon-bookmark.svg') center;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.bookmark-btn-mobile {
+    background: url('../img/icon-bookmark.svg') center;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: var(--green);
+}
