@@ -15,6 +15,26 @@
         display: flex;
         justify-content: center;
     }
+
+    .pledge-numbers {
+        margin-bottom: 20px;
+    }
+
+    .stat-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-content: center;
+        text-align: center;
+        gap:5%;
+        margin-bottom: 3vh;
+        }
+        
+        .stat-item:nth-child(2) {
+            border-top: solid 1px var(--grey);
+            border-bottom: solid 1px var(--grey);
+            
+        }
 }
 
 @media (min-width:681px) { /* change to 375px */
@@ -25,4 +45,31 @@
         display: flex;
         justify-content: space-between;
     }
+    .pledge-option_header-flex, .pledge-option_bottom-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Flex stats */
+    .stat-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: left;
+    gap:5%;
+    margin-bottom: 3vh;
+    }
+    .stat-item {
+        height: 70px;
+        flex-grow: 1;
+    }
+    .stat-item:nth-child(2) {
+        border-left: solid 1px var(--grey);
+        border-right: solid 1px var(--grey);
+        color: red;
+        padding-left: 5%;
+    }
+
 }

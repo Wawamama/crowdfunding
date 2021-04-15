@@ -21,6 +21,17 @@ h2 {
     margin-top: 10px;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
 ul {
     text-decoration: none;
 }
@@ -37,19 +48,25 @@ p {
     font-weight: 500;
 }
 
+p.project-about-description {
+    line-height: 2em;
+}
+
 /* General boxes styles */
 
 .box {
     border: solid 1px var(--lightgrey);
     border-radius: 10px;
     padding: 5% 5%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background-color: white;
 }
 
 .pledge-option:hover {
     border: solid 1px var(--green);
 }
+
+
 
 /* HEADER */
 
@@ -111,4 +128,48 @@ main {
     flex-direction: row;
     gap: 10px;
     margin-top: 5vh;
+}
+
+/* STATISTICS SECTION */
+
+
+.stat-number, .pledge-numbers-left {
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.stat-text {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+/* PLEDGES STYLES */
+.pledge-numbers {
+    display: flex;
+    justify-content: start;
+    height:auto;
+
+}
+
+.pledge-text {
+    line-height: 2em;
+    display: inline-block;
+}
+
+.pledge-amount {
+    color: var(--green);
+    font-weight: 600;
+}
+
+
+.pledge-left-text {
+    font-size: 14px;
+    color: var(--darkgrey);
+    font-weight: 500;
+    align-self: center;
+    margin-left: 10px;
+
 }
