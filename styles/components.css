@@ -56,14 +56,6 @@
     cursor: pointer;
 }
 
-.green {
-    background-color: var(--green);
-}
-
-.grey {
-    background-color: var(--grey);
-}
-
 .smaller-button.grey {
     cursor:initial;
 }

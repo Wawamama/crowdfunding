@@ -2,3 +2,15 @@
     opacity: 0.6;
 }
 
+.green {
+    background-color: var(--green);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.button.green:hover {
+    background-color: var(--darkgreen);
+}
+
