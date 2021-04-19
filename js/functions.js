@@ -17,5 +17,24 @@ export const loadPledges = (pledges) => { // takes an array of objects as argume
         selectors.getPledgeAmounts[i].innerText = pledges[i].pledge;
         selectors.getPledgeTexts[i].innerText = pledges[i].text;
         selectors.getPledgeLeft[i].innerText = pledges[i].left;
+
+        selectors.getPledgeTitles[i+3].innerText = pledges[i].name;
+        selectors.getPledgeAmounts[i+3].innerText = pledges[i].pledge;
+        selectors.getPledgeTexts[i+3].innerText = pledges[i].text;
+        
+
     }
+    console.log(selectors.getPledgeTitles)
+}
+
+export const showPopup = () => {
+    selectors.getMainDiv.classList.add('greyified');
+    selectors.getPopupDiv.classList.remove('hidden');
+    selectors.getPopupDiv.style.display = 'block';
+    console.log('popup is showing')
+}
+
+export const closePopup = () => {
+    selectors.getMainDiv.classList.remove('greyified');
+    selectors.getPopupDiv.style.display = 'none';
 }

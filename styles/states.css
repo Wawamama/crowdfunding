@@ -14,3 +14,11 @@
     background-color: var(--darkgreen);
 }
 
+.hidden {
+    opacity: 0;
+}
+
+.greyified {
+    opacity: 0.2;
+}
+

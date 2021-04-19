@@ -45,7 +45,7 @@ li {
 p {
     color: var(--darkgrey);
     margin: 20px 0;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p.project-about-description {
@@ -99,6 +99,10 @@ main {
     width: var(--mainwidth);
     min-width: 360px;
     margin: auto;
+}
+
+#page-container {
+    height: 100vh;
 }
 
 #project-container {
@@ -172,4 +176,23 @@ main {
     align-self: center;
     margin-left: 10px;
 
+}
+
+/* POPUP CHOOSE PLEDGE */
+
+#popup-container {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:20vh;
+    overflow-y: scroll;
+    width: var(--mainwidth);
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    right:5%;
+    top:5%;
+    cursor: pointer;
 }
