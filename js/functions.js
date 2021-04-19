@@ -21,6 +21,7 @@ export const loadPledges = (pledges) => { // takes an array of objects as argume
         selectors.getPledgeTitles[i+3].innerText = pledges[i].name;
         selectors.getPledgeAmounts[i+3].innerText = pledges[i].pledge;
         selectors.getPledgeTexts[i+3].innerText = pledges[i].text;
+        selectors.getPledgeLeft[i+3].innerText = pledges[i].left;
         
 
     }
