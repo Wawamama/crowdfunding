@@ -32,10 +32,34 @@ export const showPopup = () => {
     selectors.getMainDiv.classList.add('greyified');
     selectors.getPopupDiv.classList.remove('hidden');
     selectors.getPopupDiv.style.display = 'block';
-    console.log('popup is showing')
 }
 
 export const closePopup = () => {
     selectors.getMainDiv.classList.remove('greyified');
     selectors.getPopupDiv.style.display = 'none';
 }
+
+export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the radios and all the hidden divs)
+    for (let i=0; i<radios.length; i++) {
+        radios[i].onchange = function() {
+            for (let j = 0; j<radios.length; j++) {
+                console.log('radio number' + j + 'is ' +radios[j].checked)
+                console.log(divs[j])
+                if(radios[j].checked) {
+                    divs[j-1].classList.remove('hidden');
+                }
+               
+          
+            }
+        }
+            
+    }
+}
+
+/*
+ for (let i=0; i<radios.length; i++) {
+        radios[i].onchange = function() {
+            divs[i-1].classList.remove('hidden')
+        }
+    }
+    */

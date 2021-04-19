@@ -11,11 +11,16 @@ export let getPledgeTitles = document.getElementsByClassName('pledge-title');
 export let getPledgeAmounts = document.getElementsByClassName('pledge-amount');
 export let getPledgeTexts = document.getElementsByClassName('pledge-text');
 export let getPledgeLeft = document.getElementsByClassName('pledge-numbers-left');
+export let getPledgeHiddenDiv = document.getElementsByClassName('enter-pledge-container ');
+
 
 
 // Buttons 
 export let getButtonPopupOpener = document.querySelector('.popup-opener');
 export let getCloseButtons = document.querySelector('.close-btn');
+
+// Radio Buttons
+export let getRadioButtons = document.querySelectorAll("input[type=radio]");
 
 // DIV Selectors
 export let getPopupDiv = document.querySelector('#popup-container');

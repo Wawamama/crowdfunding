@@ -1,5 +1,6 @@
 @import '/styles/variables.css';
 
+/* BUTTONS */
 .button {
     outline: none;
     color: white;
@@ -16,6 +17,11 @@
 .smaller-button {
     height: 40px;
     width: 160px;
+}
+
+.smallest-button {
+  width: 110px;
+  height: 40px;
 }
 
 
@@ -126,4 +132,22 @@ progress[value] {
     display: block;
   }
   
-  
+  /* INPUT TEXT pledge amount */
+  .textinput-container {
+    color: var(--darkgrey);
+    padding: 7px 2px 7px 14px;
+    border: solid 1px var(--lightgrey);
+    position: relative;
+    border-radius: 50px;
+    height: 40px;
+    width: 110px;
+    font-weight: 700;
+  }
+
+  input[type='text'] {
+    outline: none;
+    border: none;
+    width: 40px;
+    color: black;
+    font-weight: 500;
+  }

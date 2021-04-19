@@ -200,3 +200,14 @@ main {
 #popup-container .pledge-numbers-left {
     font-size: 1em;
 }
+
+.enter-pledge-container {
+    border-top: solid 1px var(--lightgrey);
+    margin-top: 20px;
+}
+
+.enter-pledge_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
