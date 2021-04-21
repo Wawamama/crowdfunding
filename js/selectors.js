@@ -18,6 +18,10 @@ export let getPledgeHiddenDiv = document.getElementsByClassName('enter-pledge-co
 // Buttons 
 export let getButtonPopupOpener = document.querySelector('.popup-opener');
 export let getCloseButtons = document.querySelector('.close-btn');
+export let getContinueButtons = document.getElementsByClassName('continue');
+
+// Text field for pledge amount
+export let getAmountPledge = document.getElementsByClassName('pledge-amount-entered')
 
 // Radio Buttons
 export let getRadioButtons = document.querySelectorAll("input[type=radio]");

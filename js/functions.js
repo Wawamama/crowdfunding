@@ -25,7 +25,6 @@ export const loadPledges = (pledges) => { // takes an array of objects as argume
         
 
     }
-    console.log(selectors.getPledgeTitles)
 }
 
 export const showPopup = () => {
@@ -43,23 +42,26 @@ export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the
     for (let i=0; i<radios.length; i++) {
         radios[i].onchange = function() {
             for (let j = 0; j<radios.length; j++) {
-                console.log('radio number' + j + 'is ' +radios[j].checked)
-                console.log(divs[j])
                 if(radios[j].checked) {
                     divs[j-1].classList.remove('hidden');
                 }
-               
-          
             }
         }
             
     }
 }
 
-/*
- for (let i=0; i<radios.length; i++) {
-        radios[i].onchange = function() {
-            divs[i-1].classList.remove('hidden')
+export const updateBankroll = (dollars) => {
+    console.log(datas.totalMoneyRaised + dollars)
+   // datas.totalMoneyRaised += dollars;
+}
+
+export const validatePledge = (dollars, edition) => {
+    for (let pledges in datas.pledges) {
+        if (pledges.name === edition) {
+            pledges.left --;
         }
     }
-    */
+    updateBankroll(dollars);
+    closePopup();
+}
