@@ -1,6 +1,8 @@
 import * as selectors from './selectors.js';
 import * as datas from './datas.js';
 
+
+
 const addComma = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -51,9 +53,8 @@ export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the
     }
 }
 
-export const updateBankroll = (dollars) => {
-    console.log(datas.totalMoneyRaised + dollars)
-   // datas.totalMoneyRaised += dollars;
+export const updateBankroll = (bankroll, dollars) => {
+    return bankroll = bankroll + parseInt(dollars);
 }
 
 export const validatePledge = (dollars, edition) => {

@@ -21,12 +21,11 @@ export let pledges = [
 ]
 
 // INITIAL VALUES
-const INIT_DOLLARS = 89914;
-const INIT_BACKERS = 5007;
-const INIT_DAYS_LEFT = 56;
+export const INIT_DOLLARS = 89914;
+export const INIT_BACKERS = 5007;
+export const INIT_DAYS_LEFT = 56;
 
-// Define variables
-export let totalMoneyRaised = INIT_DOLLARS;
-export let totalBackers = INIT_BACKERS;
-export let daysLeft = INIT_DAYS_LEFT;
+
+
+
 
