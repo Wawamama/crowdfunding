@@ -19,8 +19,8 @@ for (let i=0; i<selectors.forms.length; i++) {
     selectors.forms[i].addEventListener('submit', event => {
         let money = selectors.getAmountPledge[i].value;
         updateBankroll(totalMoneyRaised, money);
-        event.preventDefault();
-        console.log(totalMoneyRaised)
+        event.preventDefault(); 
+        console.log('updated BR : ' + totalMoneyRaised)
     })
 }
 

@@ -53,9 +53,18 @@ export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the
     }
 }
 
+
 export const updateBankroll = (bankroll, dollars) => {
-    return bankroll = bankroll + parseInt(dollars);
+    if (!isNaN(bankroll) && !isNaN(dollars)) {
+        bankroll = parseInt(bankroll);
+        dollars = parseInt(dollars);
+        bankroll += dollars;
+        return bankroll;
+    } else {
+        return 'We need numbers here'
+    }
 }
+
 
 export const validatePledge = (dollars, edition) => {
     for (let pledges in datas.pledges) {
