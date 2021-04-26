@@ -30,6 +30,7 @@ export let getAmountPledge = document.getElementsByClassName('pledge-amount-ente
 export let getRadioButtons = document.querySelectorAll("input[type=radio]");
 
 // DIV Selectors
+export let getSuccessDiv = document.querySelector('#success-popup');
 export let getPopupDiv = document.querySelector('#popup-container');
 export let getMainDiv = document.querySelector('#page-container');
 

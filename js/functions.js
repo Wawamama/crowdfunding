@@ -39,6 +39,7 @@ export const showPopup = () => {
 export const closePopup = () => {
     selectors.getMainDiv.classList.remove('greyified');
     selectors.getPopupDiv.style.display = 'none';
+    selectors.getSuccessDiv.style.display = 'none';
 }
 
 export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the radios and all the hidden divs)
@@ -64,4 +65,9 @@ export const validatePledge = (dollars, edition) => {
     }
     updateBankroll(dollars);
     closePopup();
+}
+
+export const showSuccessBox = () => {
+    selectors.getSuccessDiv.classList.remove('hidden');
+    selectors.getPopupDiv.style.display = 'none';
 }

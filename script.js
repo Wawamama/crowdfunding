@@ -1,6 +1,6 @@
 import * as datas from './js/datas.js';
 import * as selectors from './js/selectors.js';
-import { initStats, loadPledges, showPopup, closePopup, showHiddenPopupDiv, validatePledge} from './js/functions.js';
+import { initStats, loadPledges, showPopup, closePopup, showHiddenPopupDiv, showSuccessBox} from './js/functions.js';
 
 // NEEDED VARIABLES
 let totalMoneyRaised = datas.INIT_DOLLARS;
@@ -11,17 +11,24 @@ let daysLeft = datas.INIT_DAYS_LEFT;
 initStats(totalMoneyRaised, totalBackers, daysLeft);
 loadPledges(datas.pledges)
 
-// Event Listeners
+// EVENT LISTENERS
 
 selectors.getButtonPopupOpener.addEventListener("click", showPopup);
 selectors.getCloseButtons.addEventListener("click", closePopup);
+selectors.getGotItButton.addEventListener("click", closePopup);
 
-for (let i=0; i<selectors.forms.length; i++) {
+for (let i=0; i<selectors.forms.length; i++) { // events when pledge is entered
     selectors.forms[i].addEventListener('submit', event => {
         let money = selectors.getAmountPledge[i].value;
-        updateBankroll(money);
-        event.preventDefault(); 
-        initStats(totalMoneyRaised, totalBackers, daysLeft);
+
+        if (money<datas.pledges[i].minpledge) {
+            alert(`You have to pledge a minimum of ${datas.pledges[i].minpledge} $.`)
+        } else {
+            event.preventDefault(); 
+            updateBankroll(money);
+            initStats(totalMoneyRaised, totalBackers, daysLeft);
+            showSuccessBox();
+        }  
     })
 }
 
