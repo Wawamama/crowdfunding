@@ -21,6 +21,11 @@ export let getCloseButtons = document.querySelector('.close-btn');
 export let getContinueButtons = document.getElementsByClassName('continue');
 export let getGotItButton = document.querySelector('#gotit');
 
+export let getBookmarkMobile = document.querySelector('.bookmark-btn-mobile');
+export let getBookmarkDesktop = document.querySelector('.bookmark-btn-desktop');
+
+export let getSelectReward = document.getElementsByClassName('select-reward');
+
 // Form for pledge amount
 export let forms = document.getElementsByTagName('form');
 export let getAmountPledge = document.getElementsByClassName('pledge-amount-entered') // textfield
