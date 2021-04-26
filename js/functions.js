@@ -26,7 +26,9 @@ export const loadPledges = (pledges) => { // takes an array of objects as argume
         selectors.getPledgeTexts[i+3].innerText = pledges[i].text;
         selectors.getPledgeLeft[i+3].innerText = pledges[i].left;
         
-
+        if (pledges[i].left<1) {
+            selectors.getPledgeOptionDiv[i].classList.add('zero-left');
+        }
     }
 }
 
@@ -70,4 +72,8 @@ export const validatePledge = (dollars, edition) => {
 export const showSuccessBox = () => {
     selectors.getSuccessDiv.classList.remove('hidden');
     selectors.getPopupDiv.style.display = 'none';
+}
+
+export const getPercentage = (amount, total) => {
+    return (amount / total)*100;
 }

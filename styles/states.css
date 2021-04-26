@@ -22,3 +22,7 @@
     opacity: 0.2;
 }
 
+.zero-left > button:hover {
+    cursor: none;
+}
+

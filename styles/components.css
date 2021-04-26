@@ -69,13 +69,23 @@
 /* PROGRESS BAR */
 
 progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    color: blue;
     width: 100%;
-    height: 20px;
+    height: 10px;
 }
 
-.progress-bar {
-    color: var(--green);
+progress[value]::-webkit-progress-bar {
+  background-color: var(--lightgrey);
+  border-radius: 25px;
 }
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--green);
+  border-radius: 25px;
+}
+
 
 /* RADIO BUTTONS */
 

@@ -1,16 +1,19 @@
 import * as datas from './js/datas.js';
 import * as selectors from './js/selectors.js';
-import { initStats, loadPledges, showPopup, closePopup, showHiddenPopupDiv, showSuccessBox} from './js/functions.js';
+import { initStats, loadPledges, showPopup, closePopup, showHiddenPopupDiv, showSuccessBox, getPercentage} from './js/functions.js';
 
 // NEEDED VARIABLES
 let totalMoneyRaised = datas.INIT_DOLLARS;
 let totalBackers = datas.INIT_BACKERS;
 let daysLeft = datas.INIT_DAYS_LEFT;
 let bookmarked = false;
+let getProgress = document.querySelector('.progress-bar');
+let moneyPercentage = getPercentage(totalMoneyRaised, 100000);
 
 
 initStats(totalMoneyRaised, totalBackers, daysLeft);
 loadPledges(datas.pledges)
+getProgress.value = moneyPercentage;
 
 // EVENT LISTENERS
 
@@ -47,6 +50,7 @@ for (let i=0; i<selectors.forms.length; i++) { // events when pledge is entered
             initStats(totalMoneyRaised, totalBackers, daysLeft);
             loadPledges(datas.pledges)
             showSuccessBox();
+            updateProgressBar();
         }  
     })
 }
@@ -63,6 +67,11 @@ const updateBankroll = (dollars) => {
     } else {
         return 'We need a number here'
     }
+}
+
+const updateProgressBar = () => {
+    moneyPercentage = getPercentage(totalMoneyRaised, 100000)
+    getProgress.value = moneyPercentage;
 }
 
 

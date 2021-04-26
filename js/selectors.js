@@ -12,6 +12,7 @@ export let getPledgeAmounts = document.getElementsByClassName('pledge-amount');
 export let getPledgeTexts = document.getElementsByClassName('pledge-text');
 export let getPledgeLeft = document.getElementsByClassName('pledge-numbers-left');
 export let getPledgeHiddenDiv = document.getElementsByClassName('enter-pledge-container ');
+export let getPledgeOptionDiv = document.getElementsByClassName('pledge-option');
 
 
 
@@ -33,6 +34,7 @@ export let getAmountPledge = document.getElementsByClassName('pledge-amount-ente
 
 // Radio Buttons
 export let getRadioButtons = document.querySelectorAll("input[type=radio]");
+
 
 // DIV Selectors
 export let getSuccessDiv = document.querySelector('#success-popup');
