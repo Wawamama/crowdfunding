@@ -217,3 +217,32 @@ main {
     flex-direction: row;
     gap: 20px;
 }
+
+/* SUCCESS POPUP */
+
+#success-popup {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:50vh;
+    overflow-y: scroll;
+    width: 40%;
+    padding: 40px;
+}
+
+#success-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 2em;
+    justify-content: start;
+    padding: 40px;
+}
+
+.valid-tick {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    margin-bottom: 10%;
+}

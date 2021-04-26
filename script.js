@@ -20,7 +20,7 @@ for (let i=0; i<selectors.forms.length; i++) {
         let money = selectors.getAmountPledge[i].value;
         updateBankroll(totalMoneyRaised, money);
         event.preventDefault(); 
-        console.log('updated BR : ' + totalMoneyRaised)
+       // console.log('updated BR : ' + totalMoneyRaised)
     })
 }
 

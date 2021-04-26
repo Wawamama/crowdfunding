@@ -56,9 +56,11 @@ export const showHiddenPopupDiv = (radios, divs) => { // takes 2 arrays (all the
 
 export const updateBankroll = (bankroll, dollars) => {
     if (!isNaN(bankroll) && !isNaN(dollars)) {
+        console.log('old BR : ' + bankroll)
         bankroll = parseInt(bankroll);
         dollars = parseInt(dollars);
         bankroll += dollars;
+        console.log('new BR : ' + bankroll)
         return bankroll;
     } else {
         return 'We need numbers here'

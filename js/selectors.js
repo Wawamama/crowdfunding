@@ -19,6 +19,7 @@ export let getPledgeHiddenDiv = document.getElementsByClassName('enter-pledge-co
 export let getButtonPopupOpener = document.querySelector('.popup-opener');
 export let getCloseButtons = document.querySelector('.close-btn');
 export let getContinueButtons = document.getElementsByClassName('continue');
+export let getGotItButton = document.querySelector('#gotit');
 
 // Form for pledge amount
 export let forms = document.getElementsByTagName('form');
