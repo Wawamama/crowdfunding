@@ -27,6 +27,9 @@ export let getBookmarkDesktop = document.querySelector('.bookmark-btn-desktop');
 
 export let getSelectReward = document.getElementsByClassName('select-reward');
 
+export let hamburger = document.querySelector('.hamburger-icon');
+export let nav = document.querySelector('.nav');
+
 // Form for pledge amount
 export let forms = document.getElementsByTagName('form');
 export let getAmountPledge = document.getElementsByClassName('pledge-amount-entered') // textfield

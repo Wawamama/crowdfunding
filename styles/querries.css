@@ -11,10 +11,14 @@
     }
 
     .hamburger-icon {
-        display: block;
         position: absolute;
         top: 40px;
         right: 40px;
+        cursor: pointer;
+        outline: none;
+        border-style: none;
+        text-decoration: none;
+        background-color: transparent;
     }
 
     nav {
@@ -25,6 +29,10 @@
         margin: auto;
         font-size: 1.5em;
         transform: translateY(-100vh);
+        transition: all 400ms ease-out;
+    }
+    nav.active-nav {
+        transform: translateY(10vh);
     }
 
 

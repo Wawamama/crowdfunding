@@ -58,6 +58,12 @@ for (let i=0; i<selectors.forms.length; i++) { // events when pledge is entered
 // Show hidden divs
 showHiddenPopupDiv(selectors.getRadioButtons, selectors.getPledgeHiddenDiv);
 
+// Toggle mobile menu
+selectors.hamburger.addEventListener('click', () => {
+    selectors.nav.classList.toggle('active-nav');
+    console.log('show menu')
+})
+
 
 // FUNCTIONS (not working from functions.js file fuck it)
 const updateBankroll = (dollars) => {
