@@ -36,11 +36,7 @@ ul {
     text-decoration: none;
 }
 
-li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 20px;
-}
+
 
 p {
     color: var(--darkgrey);
@@ -84,19 +80,7 @@ header {
     position: relative;
 }
 
-.header-logo {
-    position: absolute;
-    top:30px;
-    left: 10%;
-}
 
-header > nav {
-    position: absolute;
-    top:30px;
-    right:10%;
-    color: white;
-    font-size: 14px;
-}
 
 
 /* PAGE CONTAINER */
